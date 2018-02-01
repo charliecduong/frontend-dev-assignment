@@ -21,15 +21,15 @@ class SearchInputComponent extends Component {
     }
   }
 
+  handleSearch(event){
+    event.preventDefault();
+  }
+
   clearInputSearch(){
     this.setState({
       text: ''
     });
     this.props.clearSearch();
-  }
-
-  handleSearch(event){
-    event.preventDefault();
   }
 
   render() {
